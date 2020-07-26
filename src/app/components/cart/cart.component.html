@@ -1,0 +1,22 @@
+<a routerLink="/goods"
+  ><button class="btn btn-primary nav-btn">Goods List</button></a
+>
+<ul class="list-group">
+  <li
+    *ngFor="let item of goods"
+    class="list-group-item d-flex justify-content-between align-items-center"
+  >
+    <span>{{ item.id }}</span>
+    <span> {{ item.name }}</span>
+    <span>{{ item.label }}</span>
+    <span>&#36;{{ item.price }}</span>
+    <button (click)="deleteItem(item.id)" class="btn btn-danger">
+      Delete
+    </button>
+  </li>
+</ul>
+<h1 *ngIf="goods.length > 0">Total price: &#36;{{ totalPrice }}</h1>
+<h1 *ngIf="!(goods.length > 0)">Your cart is empty</h1>
+<button (click)="clearCart()" class="btn btn-danger btn-clear" id="clear">
+  Clear cart
+</button>

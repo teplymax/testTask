@@ -1,0 +1,15 @@
+<a routerLink="/cart"><button class="btn btn-primary nav-btn">Cart</button></a>
+<ul class="list-group">
+  <li
+    *ngFor="let item of goods"
+    class="list-group-item d-flex justify-content-between align-items-center"
+  >
+    <span>{{ item.id }}</span>
+    <span> {{ item.name }}</span>
+    <span>{{ item.label }}</span>
+    <span>&#36;{{ item.price }}</span>
+    <button (click)="addToCart(item.id)" class="btn btn-primary">
+      Add to cart
+    </button>
+  </li>
+</ul>
