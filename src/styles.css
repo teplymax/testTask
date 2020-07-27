@@ -6,11 +6,27 @@ h1 {
   margin-bottom: 0;
 }
 .nav-btn {
-  min-width: 400px;
+  width: 100%;
 }
 a {
   display: block;
-  width: fit-content;
   height: fit-content;
   margin: 20px auto;
+  width: 80%;
+  min-width: 100px;
+  max-width: 400px;
+}
+.item__label {
+  width: 65%;
+}
+
+@media screen and (max-width: 678px) {
+  .item__label {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .item__label {
+    width: 25%;
+  }
 }

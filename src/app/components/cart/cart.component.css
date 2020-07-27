@@ -1,7 +1,7 @@
 .btn-clear {
-  min-width: 400px;
   display: block;
-  width: fit-content;
-  height: fit-content;
   margin: 20px auto;
+  width: 80%;
+  min-width: 100px;
+  max-width: 400px;
 }
