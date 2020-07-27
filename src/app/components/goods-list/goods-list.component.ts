@@ -12,13 +12,13 @@ export class GoodsListComponent implements OnInit {
   }
 
   goods: IGoods[] = [{
-    id: 1, name: "article 1", label: "gfhjdfghdfghdfghfghfghdfghghdffghdf", price: 25
+    id: 1, name: "article 1", label: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", price: 25
   },
   {
-    id: 2, name: "article 2", label: "gfhjdfghdfghdfghfghfghdfghghdffghdf", price: 35
+    id: 2, name: "article 2", label: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", price: 35
   },
   {
-    id: 3, name: "article 3", label: "gfhjdfghdfghdfghfghfghdfghghdffghdf", price: 45
+    id: 3, name: "article 3", label: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", price: 45
   }]
 
   ngOnInit(): void {
