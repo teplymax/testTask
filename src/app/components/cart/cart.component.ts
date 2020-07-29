@@ -30,12 +30,12 @@ export class CartComponent implements OnInit {
   clearCart() {
     this.data.clearLocalStorage();
     this.getGoods();
-    alert('Your cart has been cleared!')
   }
-  deleteItem(id) {
+  deleteItem(i) {
+
     this.getGoods();
-    let newValue = this.goods.filter((item) => {
-      return item.id != id;
+    let newValue = this.goods.filter((item, index) => {
+      if (index != i) return item;
     })
     this.data.deleteFromLocalStorage(newValue);
     this.getGoods();
